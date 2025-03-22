@@ -1,9 +1,8 @@
 # Seren
+    import tkinter as tk
+    from tkinter import messagebox
 
-import tkinter as tk
-from tkinter import messagebox
-
-class MentalHealthTracker:
+    class MentalHealthTracker:
     def __init__(self, root):
         self.root = root
         self.root.title("Mental Health Tracker")
@@ -59,7 +58,7 @@ class MentalHealthTracker:
         # Display health score and solution
         messagebox.showinfo("Health Score", f"Your health score is: {health_score}\n{solution}")
 
-if __name__ == "__main__":
+    if __name__ == "__main__":
     root = tk.Tk()
     app = MentalHealthTracker(root)
     root.mainloop()
